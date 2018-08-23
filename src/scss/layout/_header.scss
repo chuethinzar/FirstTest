@@ -1,0 +1,22 @@
+.site{
+  .site-header{
+      text-align: center;
+      background-color: #ccccff;
+      @include respond-to() {
+    			width: $size__site-full;
+    	}
+  }
+  .header-menu{
+    ul{
+     li{
+       a{
+         color: #4d004d;
+         background-color: #7575a3;
+         &:hover{
+           color: #000;
+         }
+       }
+      }
+    }
+  }
+}

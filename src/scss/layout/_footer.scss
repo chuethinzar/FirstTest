@@ -1,0 +1,38 @@
+.site-footer {
+	background-color: #ff9999;
+	@include respond-to() {
+			width: $size__site-full;
+	}
+
+	.footer-widgets {
+		display: inline-block;
+		position: relative;
+		width: $size__site-full;
+		text-align: center;
+		clear: both;
+		@include respond-to() {
+				width: $size__site-full;
+		}
+	}
+
+	.site-info {
+		margin:0 auto;
+		overflow: hidden;
+		@include respond-to() {
+				width: $size__site-full;
+		}
+		h2{
+			display: table;
+			position: relative;
+			margin: 0 auto;
+			padding: 2px;
+			color: #8a2626;
+			text-align: center;
+			font-size: 20px;
+			word-break: break-all;
+			@include respond-to() {
+					width: $size__site-full;
+			}
+		}
+	}
+}

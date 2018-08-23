@@ -1,0 +1,85 @@
+.widget_posts{
+    display: inline-block;
+    width: 100%;
+    @include respond-to() {
+      width: $size__site-full;
+    }
+    h2{
+      display: table;
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+  		padding: 10px 0;
+  		text-align: center;
+      background-color: #ff9999;
+      color: #811b4d;
+      z-index: 1;
+      @include respond-to() {
+        width: $size__site-full;
+      }
+    }
+    .widget-list {
+  		margin: 0;
+  		padding: 0;
+  		list-style: none;
+      @include respond-to() {
+        width: $size__site-full;
+      }
+  		li {
+        display: inline-block;
+    		width: calc(95% / 4);
+        height: 330px;
+    		margin: 8px;
+    		padding: 20px;
+    		border-radius: 20px;
+    		background-color: #ff9999;
+    		float: left;
+    		@include respond-to() {
+    			left: 0;
+    			right: 0;
+    			margin: 0 auto;
+    			margin-top: 10px;
+    			width: 100%;
+        }
+        .entry-thumbnail{
+          position: relative;
+          width: 300px;
+          height: 200px;
+          border-radius: 20px;
+          @include respond-to() {
+						width: $size__site-full;
+					}
+        }
+          img{
+            position: relative;
+            width: 300px;
+            height: 200px;
+            margin: 0 auto;
+            padding: 0;
+            border-radius: 20px;
+            @include respond-to() {
+  						width: $size__site-full;
+  					}
+          }
+          p{
+            font-weight: bold;
+            color: #9b2754;
+            overflow: hidden;
+            @include respond-to() {
+  						width: $size__site-full;
+  					}
+          }
+        }
+        .view-counts {
+          display: table;
+          margin: 0 auto;
+          padding: 5px;
+          border: 2px solid #3c3c3c;
+          text-align: center;
+  				color: #9b2754;
+          @include respond-to() {
+						width: $size__site-full;
+					}
+  			}
+    }
+  }

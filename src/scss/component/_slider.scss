@@ -1,0 +1,32 @@
+.site{
+  .flexslider{
+    .slides{
+      img{
+        display: block;
+        width: 100%;
+        height: 650px;
+        margin: 0 auto;
+        padding: 0;
+        line-height: 1;
+        transform: scale(1);
+        @include respond-to() {
+            width: $size__site-full;
+        }
+      }
+    }
+    .flex-direction-nav{
+      .flex-prev{
+        margin-left: 10px;
+        @include respond-to() {
+            width: $size__site-full;
+        }
+      }
+    }
+    .flex-control-nav{
+      text-align: center;
+      @include respond-to() {
+          width: $size__site-full;
+      }
+    }
+  }
+}

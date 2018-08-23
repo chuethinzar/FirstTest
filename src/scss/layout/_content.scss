@@ -1,0 +1,122 @@
+.site {
+	width: 1349px;
+	margin: 0 auto;
+	overflow: hidden;
+	@include respond-to() {
+			width: $size__site-full;
+	}
+	.site-content {
+		width: 100%;
+		@include respond-to() {
+				width: $size__site-full;
+		}
+		.content-area {
+			display: inline-block;
+			width: 100%;
+			@include respond-to() {
+				width: $size__site-full;
+			}
+			.site-main {
+				width: 100%;
+				@include respond-to() {
+						width: $size__site-full;
+				}
+				.top-page{
+					@include respond-to() {
+							width: $size__site-full;
+					}
+					.post{
+						display: inline-block;
+						width: calc(95% / 4);
+						margin: 8px;
+						padding: 20px;
+						border-radius: 20px;
+						background-color: #ff9999;
+						float: left;
+						@include respond-to() {
+							left: 0;
+							right: 0;
+							margin: 0 auto;
+							margin-top: 10px;
+							width: 90%;
+						}
+						.entry-thumbnail{
+							margin: 0 auto;
+							@include respond-to() {
+									width: $size__site-full;
+							}
+							img{
+								width: 100%;
+								height: 250px;
+								@include respond-to() {
+										width: $size__site-full;
+								}
+							}
+						}
+						.entry-header{
+							h2{
+								color: #8a2626;
+								@include respond-to() {
+										width: $size__site-full;
+								}
+								a{
+									display: inline-block;
+									width: 100%;
+									color: #8a2626;
+									@include respond-to() {
+											width: $size__site-full;
+									}
+								}
+							}
+						}
+						.entry-summary{
+							color: #8a2626;
+						}
+						.entry-footer,
+						span{
+							color: #8a2626;
+						}
+						.read-more{
+			        display: table;
+			        position: relative;
+			        margin: 0 auto;
+			        padding: 10px;
+			        text-align: center;
+			        @include respond-to() {
+			          width: $size__site-full;
+			        }
+			      }
+					}
+				}
+			}
+		}
+		.error-404{
+			display: inline-block;
+	    position: relative;
+	    width: 100%;
+	    margin: 0 auto	;
+	    padding: 20px;
+	    border: 1px solid #e6ccff;
+	    border-radius: 40px;
+	    background-color: #ff9999;
+	    float: left;
+	    @include respond-to() {
+	        width: $size__site-full;
+	    }
+	    .page-header{
+	      .page-title{
+	        text-align: center;
+	        @include respond-to() {
+	            width: $size__site-full;
+	        }
+	      }
+	      .page-content{
+	        padding: 10px;
+	        @include respond-to() {
+	            width: $size__site-full;
+	        }
+	      }
+	    }
+		}
+	}
+}

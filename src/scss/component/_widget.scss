@@ -1,0 +1,81 @@
+.widget-area {
+	display: inline-block;
+	width: 100%;
+	padding: 0;
+	@include respond-to() {
+		width: $size__site-full;
+	}
+	.widget {
+		display: inline-block;
+		width: calc(95% / 4);
+		margin: 8px;
+		padding: 10px;
+		border-radius: 20px;
+		background-color: #ff9999;
+		float: left;
+		@include respond-to() {
+			left: 0;
+			right: 0;
+			width: 90%;
+			margin: 0 auto;
+			margin-top: 10px;
+		}
+		.widget-title {
+			padding-left: 5px;
+			color: #811b4d;
+			@include respond-to() {
+				width: $size__site-full;
+			}
+		}
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			@include respond-to() {
+					width: $size__site-full;
+			}
+			li {
+				display:inline-block;
+				width: 95%;
+				margin-top: 10px;
+				margin-left: 20px;
+				@include respond-to() {
+						width: 95%;
+				}
+				&::before {
+					content: '\f061';
+					color: #811b4d;
+					vertical-align: top;
+					font-family: fontawesome;
+					@include respond-to() {
+							width: $size__site-full;
+					}
+				}
+				a{
+					display: inline-block;
+					width: 88%;
+					padding-left: 5px;
+					color: #811b4d;
+				}
+			}
+		}
+
+	/* Make sure select elements fit in widgets. */
+		select {
+			margin: 1rem;
+			max-width: 100%;
+			@include respond-to() {
+					width: $size__site-full;
+			}
+		}
+	}
+	.widget_recent_comments{
+		ul{
+			li{
+				span{
+			    margin-left: 5px;
+				}
+			}
+		}
+	}
+}

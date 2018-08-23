@@ -1,0 +1,23 @@
+a {
+	@include transition(.3);
+	background-color: transparent;
+	color: #8a2626;
+	text-decoration: none;
+	word-break: break-all;
+	word-wrap: break-word;
+
+	&:active,
+	&:focus,
+	&:hover {
+		color: $color__link-hover;
+	}
+
+	&:focus {
+		outline: thin dotted;
+	}
+
+	&:active,
+	&:hover {
+		outline: 0;
+	}
+}

@@ -1,0 +1,27 @@
+.site-content{
+	position: relative;
+	.pagination{
+		.nav-links{
+			text-align: center;
+			font-size: 20px;
+			@include respond-to() {
+					width: $size__site-full;
+			}
+			.page-numbers {
+				display: inline-block;
+				padding: 2px;
+				margin: 0 2px 0 0;
+				border: 1px solid #cc7878;
+				border-radius: 2px;
+				line-height: 1;
+				text-decoration: none;
+				color: #8a2626;
+				font-weight: 300;
+			}
+			.page-numbers.current,
+			a.page-numbers:hover {
+					background: #ff9999;
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+.site-branding {
+	color: #811b4d;
+	.site-description{
+		font-size: 20px;
+		@include respond-to() {
+				width: $size__site-full;
+		}
+	}
+	.site-title{
+		font-family: $font__noto;
+		font-size: 70px;
+		@include respond-to() {
+				width: $size__site-full;
+		}
+		a{
+			&:hover{
+				color: #75465d;
+			}
+		}
+	}
+}
