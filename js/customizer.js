@@ -45,6 +45,31 @@
 	wp.customize( 'themename_menu_textcolor', function( value ) {
 		value.bind( function( newval ) {
 			$( '.site .header-menu ul li a' ).css({'color': newval});
+			$( '.widget_posts h2' ).css({'color': newval});
+		$( '.widget_posts .widget-list li p' ).css({'color': newval});
+		$( '.site .site-content .content-area .site-main .top-page .post .entry-header h2 a' ).css({'color': newval});
+		$( '.site .site-content .content-area .site-main .top-page .post .entry-summary' ).css({'color': newval});
+		$( '.site .site-content .content-area .site-main .top-page .post .entry-footer' ).css({'color': newval});
+		$( '.site .site-content .content-area .site-main .top-page .post .entry-footer a' ).css({'color': newval});
+		$( '.site-content .pagination .nav-links .page-numbers' ).css({'color': newval});
+		$( '.widget-area .widget .widget-title' ).css({'color': newval});
+		$( '.widget-area .widget ul li a' ).css({'color': newval});
+		$( '.widget-area .widget a' ).css({'color': newval});
+		$( '.site-footer .site-info h2' ).css({'color': newval});
+		$( '.site-main-single .page .page-header .page-title' ).css({'color': newval});
+		$( '.site-main-single .page .page-content ol li' ).css({'color': newval});
+		$( '.site-main-single .page .page-content a' ).css({'color': newval});
+		$( '.site-main-single .page .page-content h2' ).css({'color': newval});
+		$( '.site-main-single .page .page-content p' ).css({'color': newval});
+		$( '.site-main-single .post .entry-header h2' ).css({'color': newval});
+		$( '.site-main-single .post .entry-header .entry-meta' ).css({'color': newval});
+		$( '.site-main-single .post .entry-content' ).css({'color': newval});
+		$( '.site-main-single .post .post-navigation a' ).css({'color': newval});
+		$( '.site-main-single .post .widget.widget-related-post a' ).css({'color': newval});
+		$( '.site-main-single .post .widget.widget-related-post .widget-title' ).css({'color': newval});
+		$( '.site-main-archive .top-page .post .entry-header a' ).css({'color': newval});
+		$( '.site-main-archive .top-page .post .entry-summary' ).css({'color': newval});
+		$( '.site-main-archive .top-page .post .entry-footer a' ).css({'color': newval});
 		} );
 	} );
 	wp.customize( 'themename_theme_bgcolor', function( value ) {

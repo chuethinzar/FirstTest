@@ -49,7 +49,32 @@ if ( ! function_exists( 'scm_test_style' ) ) :
 			.site-main-single .post .widget.widget-related-post{
 				background-color: <?php echo esc_attr( $theme_bgcolor1 ); ?>;
 			}
-			.site .header-menu ul li a{
+			.site .header-menu ul li a,
+			.widget_posts h2,
+			.widget_posts .widget-list li p,
+			.site .site-content .content-area .site-main .top-page .post .entry-header h2 a,
+			.site .site-content .content-area .site-main .top-page .post .entry-summary,
+			.site .site-content .content-area .site-main .top-page .post .entry-footer,
+			.site .site-content .content-area .site-main .top-page .post .entry-footer a,
+			.site-content .pagination .nav-links .page-numbers,
+			.widget-area .widget .widget-title,
+			.widget-area .widget ul li a,
+			.widget-area .widget a,
+			.site-footer .site-info h2,
+			.site-main-single .page .page-header .page-title,
+			.site-main-single .page .page-content ol li,
+			.site-main-single .page .page-content a,
+			.site-main-single .page .page-content h2,
+			.site-main-single .page .page-content p,
+			.site-main-single .post .entry-header h2,
+			.site-main-single .post .entry-header .entry-meta,
+			.site-main-single .post .entry-content,
+			.site-main-single .post .post-navigation a,
+			.site-main-single .post .widget.widget-related-post a,
+			.site-main-single .post .widget.widget-related-post .widget-title,
+			.site-main-archive .top-page .post .entry-header a,
+			.site-main-archive .top-page .post .entry-summary,
+			.site-main-archive .top-page .post .entry-footer a{
 				color: <?php echo esc_attr( $theme_textcolor1 ); ?>;
 			}
 			.widget_posts h2,
@@ -90,7 +115,7 @@ if ( ! function_exists( 'scm_test_style' ) ) :
 			.site-main-archive .top-page .post .entry-header a,
 			.site-main-archive .top-page .post .entry-summary,
 			.site-main-archive .top-page .post .entry-footer a{
-				color: <?php echo esc_attr( $theme_text_color ); ?>;
+				color: <?php echo esc_attr( $theme_textcolor1 ); ?>;
 			}
 
 		</style>

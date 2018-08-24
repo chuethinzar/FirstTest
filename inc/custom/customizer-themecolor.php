@@ -98,7 +98,7 @@ function header_footer_color_customizer($wp_customize) {
 		'transport'         => 'postMessage'
 	));
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'themename_menu_textcolor', array(
-		'label'      => 'Text Color 1',
+		'label'      => 'Text Color',
 		'section'    => 'colors',
 		'settings'   => 'themename_menu_textcolor',
 	)));

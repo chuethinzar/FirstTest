@@ -30,7 +30,7 @@
     position: relative;
     .post{
       display: inline-block;
-      width: calc(95% / 4);
+      width: calc(100% / 4 - 16px);
       margin: 8px;
       padding: 20px;
       border-radius: 20px;
